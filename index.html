@@ -9,30 +9,37 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
             rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./css/styles.css">
     </head> 
     <body>
         <!--шапка-->
         <header class="header">
-            <nav class="header navigation">
-                <a lang="en" class="link header-logo href=">Web<span class="header-logo-two">Studio</span></a>
-                <ul class="list header-list">
-                    <li class="header-item "><a class="link header-link" href="./index.html">Студия</a></li>
-                    <li class="header-item "><a class="link header-link" href="./portfolio.html">Портфолио</a></li>
-                    <li class="header-item "><a class="link header-link" href="">Контакты</a></li>
+            <div class="container header-container">
+                <nav class="header navigation">
+                    <a lang="en" class="link header-logo href=">Web<span class="header-logo-two">Studio</span></a>
+                    <ul class="list header-list">
+                        <li class="header-item "><a class="link header-link" href="./index.html">Студия</a></li>
+                        <li class="header-item "><a class="link header-link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="header-item "><a class="link header-link" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="list header-connect">
+                    <li><a class="link header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="link header-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
-            </nav>
-            <ul class="list">
-                <li><a class="link header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="link header-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
+            </div>
         </header>
         <!--основной контент-->
         <main>
+            <!--Хиро контент-->
             <section class="hero">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 <button class="hero-btn btn" type="button">Заказать услугу</button> 
             </section>  
+            <!-- первый контент текст-->
             <section class="section-skills">
                 <h2 class="visually-hidden">основное</h2>
                 <ul class="list">
@@ -54,6 +61,7 @@
                     </li>
                 </ul>
             </section>
+            <!--второй контент картинки-->
             <section class="section-work">
                 <h2 class="work-title">Чем мы занимаемся</h2>
                 <ul class="list">
@@ -62,6 +70,7 @@
                     <li><img src="./images/work-img3.jpg" alt="планшетные предложения" width="370" height="294"></li>
                 </ul>
             </section>
+            <!--третий контент специалисты-->
             <section class="section-team">
                 <h2 class="section-team-title">Наша команда</h2>
                 <ul class="list">

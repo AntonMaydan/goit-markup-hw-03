@@ -8,6 +8,32 @@
   --header-contact: #757575;
   --accent-color: #2196f3;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+button {
+  cursor: pointer;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #757575;
@@ -38,6 +64,28 @@ body {
   color: #2196f3;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-connect {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.header-logo {
+  margin-right: 91px;
+}
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-logo-two {
   font-family: Raleway;
   font-weight: 700;
@@ -53,6 +101,9 @@ body {
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: var(--header-text-color);
+}
+.header-list {
+  display: flex;
 }
 
 .header-link:hover,
@@ -119,7 +170,7 @@ body {
   color: #188ce8;
 }
 
-/* -------- section-second --------*/
+/* -------- первый контент текст --------*/
 
 .skills-title {
   font-weight: 700;
@@ -137,7 +188,7 @@ body {
   color: var(--main-text-color);
 }
 
-/* --------section-work-------- */
+/* --------sвторой контент картинки------- */
 
 .work-title {
   font-weight: 700;
@@ -148,7 +199,7 @@ body {
   color: var(--second-title-color);
 }
 
-/*--------section-work-------  */
+/*--------ретий контент специалисты-------  */
 .section-team-title {
   font-weight: 700;
   font-size: 36px;
