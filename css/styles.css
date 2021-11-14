@@ -24,6 +24,9 @@ ul {
   padding: 0;
 }
 
+img {
+  display: block;
+}
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -67,6 +70,7 @@ body {
 .header-container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .navigation {
@@ -80,9 +84,13 @@ body {
   margin-left: auto;
 }
 .header-logo {
-  margin-right: 91px;
+  margin-right: 92px;
 }
 .header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.connect-item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -101,6 +109,9 @@ body {
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: var(--header-text-color);
+  padding-top: 27px;
+  padding-bottom: 37px;
+  display: block;
 }
 .header-list {
   display: flex;
@@ -126,6 +137,15 @@ body {
 
 .hero {
   background: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero-container {
+  margin: 0 auto;
+  border: 1px solid #ececec;
+}
+.hero-title {
+  width: 696px;
 }
 
 .visually-hidden {
@@ -150,6 +170,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-color);
+  margin: 0 auto;
 }
 
 .hero-btn {
@@ -163,6 +184,14 @@ body {
   letter-spacing: 0.06em;
   color: var(--main-btn-color);
   background: #2196f3;
+  padding-top: 10px;
+  padding-left: 32px;
+  padding-bottom: 10px;
+  padding-right: 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-top: 30px;
+  margin: 30px auto 0;
 }
 
 .hero-btn:hover,
@@ -171,6 +200,21 @@ body {
 }
 
 /* -------- первый контент текст --------*/
+.section-skills {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.skills-list {
+  display: flex;
+}
+
+.skills-item {
+  width: 270px;
+}
+
+.skills-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .skills-title {
   font-weight: 700;
@@ -186,10 +230,21 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-top: 10px;
 }
 
 /* --------sвторой контент картинки------- */
 
+.section-work {
+  padding-bottom: 94px;
+}
+.work-list {
+  display: flex;
+  margin-top: 50px;
+}
+.work-item:not(:last-child) {
+  margin-right: 30px;
+}
 .work-title {
   font-weight: 700;
   font-size: 36px;
@@ -200,6 +255,27 @@ body {
 }
 
 /*--------ретий контент специалисты-------  */
+.section-team {
+  background-color: #f5f4fa;
+  padding-bottom: 94px;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: -30px;
+}
+
+.team-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+}
+
+.team-item-botton {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .section-team-title {
   font-weight: 700;
   font-size: 36px;
@@ -215,6 +291,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+  margin-bottom: 10px;
 }
 
 .team-text {
@@ -229,6 +306,8 @@ body {
 
 .footer {
   background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo {
   font-family: Raleway;
@@ -261,10 +340,16 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.adress-footer {
+  padding-top: 20px;
+}
 
 .footer-address:hover,
 .footer-address:focus {
   color: var(--accent-color);
+}
+.footer-contact {
+  padding-top: 9px;
 }
 
 .footer-contact:hover,
@@ -275,6 +360,37 @@ body {
 /* ----------ПОРТФОЛИО--------- */
 /* ---------- buttons --------- */
 
+.list-buttons {
+  display: flex;
+  margin-left: 280px;
+}
+.project {
+  padding-bottom: 94px;
+}
+
+.buttons {
+  padding-bottom: 34px;
+  padding-top: 94px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: -30px;
+}
+
+.project-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.buttons-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .buttons-text {
   font-family: inherit;
   font-weight: 500;
@@ -283,6 +399,13 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+  background: #f5f4fa;
+  padding: 6px 22px;
+  border-radius: 4px;
+}
+.project-item-botton {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .project-title {
@@ -298,6 +421,7 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-top: 4px;
 }
 
 .buttons-text:hover,
